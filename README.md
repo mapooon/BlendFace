@@ -1,4 +1,6 @@
-# BlendFace
+# BlendFace (ICCV2023)
+<a href='https://arxiv.org/abs/2307.10854'><img src='https://img.shields.io/badge/ArXiv-PDF-red'></a> &nbsp; 
+<a href='https://mapooon.github.io/BlendFacePage'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp; 
 ![Overview](fig/teaser.png)
 The official PyTorch implementation for the following paper:
 > [**BlendFace: Re-designing Identity Encoders for Face-Swapping**](),  
