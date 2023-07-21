@@ -1,0 +1,11 @@
+__pycache__/
+.vscode/
+*.pyc
+*.pth
+*.pt
+*.tar
+*.dat
+*.txt
+*.h5
+
+
