@@ -12,7 +12,7 @@ This project is only for research purpose. Please do not apply it to illegal and
 The code is distributed under the CC BY-NC-SA 4.0 license.
 
 # Changelog
-2023/09/09: Released demo code and models for face-swapping.  
+2023/09/09: Released demo code and model for face-swapping.  
 2023/07/21: Released demo code and pretrained models.
 
 # Recomended Development Environment
