@@ -3,11 +3,16 @@
 <a href='https://mapooon.github.io/BlendFacePage'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp; 
 ![Overview](fig/teaser.png)
 The official PyTorch implementation for the following paper:
-> [**BlendFace: Re-designing Identity Encoders for Face-Swapping**](),  
+> [**BlendFace: Re-designing Identity Encoders for Face-Swapping**](https://arxiv.org/abs/2307.10854),  
 > Kaede Shiohara, Xingchao Yang, Takafumi Taketomi,   
 > *ICCV 2023*
 
+# Attention
+This project is only for research purpose. Please do not apply it to illegal and unethical scenarios.  
+The code is distributed under the CC BY-NC-SA 4.0 license.
+
 # Changelog
+2023/09/09: Released demo code and models for face-swapping.  
 2023/07/21: Released demo code and pretrained models.
 
 # Recomended Development Environment
@@ -45,8 +50,28 @@ The result will be displayed as follows:
 It can be seen that ArcFace underestimates the similarity for the pseudo-positive pair while BlendFace predicts properly it, which indicates BlendFace mitigates the biases while keeping the discriminativeness for the negative sample.
 
 
+# Face-Swapping  
+
+
+We also provide code for face-swapping (AEI-Net + BlendFace). The pretrained checkpoint is [here](https://drive.google.com/file/d/1ssTKnNVGomtrtPl57EOGzKNz62bh6mSs/view?usp=sharing).  
+Move to `/workspace/swapping`.
+```bash
+cd /workspace/swapping
+```
+Swap target face with source face:
+```python
+python3 inference.py \
+    -w checkpoints/blendswap.pth \ # path to checkpoint
+    -s examples/source.png \ # path to source image
+    -t examples/target.png \ # path to target image
+    -o examples/output.png # path to output image
+```
+Note: source images should be aligned following [InsightFace](https://github.com/deepinsight/insightface/blob/master/python-package/insightface/utils/face_align.py) and target images should be aligned following [FFHQ](https://github.com/happy-jihye/FFHQ-Alignment).
+
+
 # Acknowledgements
-We borrow some code from [InsightFace](https://github.com/deepinsight/insightface).
+We borrow some code from [InsightFace](https://github.com/deepinsight/insightface) and [FaceShifter](https://github.com/mindslab-ai/faceshifter) (unofficial).
+
 
 # Citation
 If you find our work useful for your research, please consider citing our paper:
