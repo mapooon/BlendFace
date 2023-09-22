@@ -12,6 +12,7 @@ This project is only for research purpose. Please do not apply it to illegal and
 The code is distributed under the CC BY-NC-SA 4.0 license.
 
 # Changelog
+2023/09/22: Released training code for BlendFace. 
 2023/09/09: Released demo code and model for face-swapping.  
 2023/07/21: Released demo code and pretrained models.
 
@@ -38,7 +39,7 @@ We provide trained models for [ArcFace](https://drive.google.com/file/d/1wFkGXI3
 # Demo  
 
 
-We provide a code to compute identity similarities of ArcFace and BlendFace for an actual positive pair (```images/anchor.png``` and ```images/positive.png```), negative pair (```images/anchor.png``` and ```images/negative.png```), and pseudo-positive pair (```images/anchor.png``` and ```images/swapped.png```).
+We provide a demo code to compute identity similarities of ArcFace and BlendFace for an actual positive pair (```images/anchor.png``` and ```images/positive.png```), negative pair (```images/anchor.png``` and ```images/negative.png```), and pseudo-positive pair (```images/anchor.png``` and ```images/swapped.png```).
 ```python3
 python3 demo.py
 ```
@@ -67,6 +68,10 @@ python3 inference.py \
     -o examples/output.png # path to output image
 ```
 Note: source images should be aligned following [InsightFace](https://github.com/deepinsight/insightface/blob/master/python-package/insightface/utils/face_align.py) and target images should be aligned following [FFHQ](https://github.com/happy-jihye/FFHQ-Alignment).
+
+
+# Training BlendFace
+Please see [`training/README.md`](https://github.com/mapooon/BlendFace/tree/master/training).
 
 
 # Acknowledgements
