@@ -81,10 +81,12 @@ We borrow some code from [InsightFace](https://github.com/deepinsight/insightfac
 # Citation
 If you find our work useful for your research, please consider citing our paper:
 ```bibtex
-@inproceedings{shiohara2023blendface,
-  title={BlendFace: Re-designing Identity Encoders for Face-Swapping},
-  author={Shiohara, Kaede and Yang, Xingchao and Taketomi, Takafumi},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-  year={2023}
+@InProceedings{Shiohara_2023_ICCV,
+    author    = {Shiohara, Kaede and Yang, Xingchao and Taketomi, Takafumi},
+    title     = {BlendFace: Re-designing Identity Encoders for Face-Swapping},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {7634-7644}
 }
 ```
